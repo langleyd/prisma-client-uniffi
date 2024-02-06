@@ -1,0 +1,3 @@
+[alias]
+prisma = "run -p prisma-client-uniffi-example-cli --bin sdk-example-prisma --"
+custom-generator = "run -p prisma-client-uniffi-example-cli --bin custom-generator --"

@@ -1,0 +1,11 @@
+[package]
+name = "prisma-client-uniffi-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+prisma-client-uniffi-lib = { path = "../../lib" }
+tokio = { version = "1.35.1", features = ["full"] }
+prisma-client-rust = { workspace = true, features = ["mysql"] }
+prisma-client-rust-cli = { workspace = true, features = ["mysql"] }
