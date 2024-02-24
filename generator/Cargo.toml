@@ -6,5 +6,5 @@ edition = "2021"
 
 [dependencies]
 prisma-client-rust-sdk = { workspace = true }
-serde = { version = "1.0.196", features = ["derive"] }
-thiserror = "1.0.56"
+serde = { workspace = true, features = ["derive"] }
+thiserror = { workspace = true }

@@ -1,8 +1,9 @@
 [workspace]
 members = [
-  "example/*",
-  "generator",
-  "lib"
+  "example/app",
+  "example/cli",
+  "example/uniffi-bindgen",
+  "generator"
 ]
 resolver = "2"
 
@@ -10,3 +11,6 @@ resolver = "2"
 prisma-client-rust = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.11" }
 prisma-client-rust-sdk = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.11" }
 prisma-client-rust-cli = { git = "https://github.com/Brendonovich/prisma-client-rust", tag = "0.6.11" }
+uniffi = { version = "0.26.0"}
+thiserror = "1.0.56"
+serde = { version = "1.0.196" }
