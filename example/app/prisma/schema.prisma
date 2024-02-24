@@ -5,12 +5,12 @@ datasource db {
 
 generator client {
   provider = "cargo prisma"
-  output   = "../src/prisma.rs"
+  output   = "../src/prisma_uniffi/prisma.rs"
 }
 
 generator custom_generator {
   provider    = "cargo uniffi-generator"
-  output      = "../src/prisma-uniffi.rs"
+  output      = "../src/prisma_uniffi.rs"
   client_path = "prisma"
 }
 

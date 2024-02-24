@@ -4,7 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-prisma-client-uniffi-lib = { path = "../../lib" }
 tokio = { version = "1.35.1", features = ["full"] }
-prisma-client-rust = { workspace = true, features = ["mysql"] }
-prisma-client-rust-cli = { workspace = true, features = ["mysql"] }
+uniffi = { workspace = true, features = ["tokio"] }
+prisma-client-rust = { workspace = true, features = ["mysql", "migrations"] }
+prisma-client-rust-cli = { workspace = true, features = ["mysql", "migrations"] }
+async-compat = "0.2.2"
+serde = { workspace = true }
+
+[lib]
+crate-type = ["cdylib"]
+name = "prisma_client_uniffi_example"

@@ -1,0 +1,4 @@
+.swiftpm
+.generated
+platforms/ios/lib/PrismaExample/prisma_client_uniffi_exampleFFI.xcframework
+platforms/ios/lib/PrismaExample/Sources/prisma-client-uniffi/prisma_client_uniffi_example.swift
